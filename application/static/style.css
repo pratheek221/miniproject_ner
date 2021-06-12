@@ -1,0 +1,186 @@
+.login
+{
+  position: absolute;
+  height: 200px;
+  width:200px;
+  left:1100px;
+  top:250px;
+
+  border-radius: 7px;
+}
+.user, .pass{
+  display: block;
+  margin-bottom: 15px;
+  height:50px;
+  width: 15px;
+}
+svg{
+  position: relative;
+  left:55px;
+}
+
+form.hide-submit input[type="submit"] {
+  display: none;
+}
+g #arrow :hover{
+  animation: changeColor 0.5s linear forwards;
+}
+@keyframes changeColor {
+  0%{
+    fill:white;
+  }
+  100%{
+    fill:black;
+  }
+}
+
+g #ellipse-1 :hover{
+  stroke: black;
+  stroke-width: 3px;
+  stroke-dashoffset: 0px;
+  stroke-dasharray:500;
+  animation: borderCircle 0.75s linear forwards;
+}
+@keyframes borderCircle {
+  0%{
+    stroke-dashoffset: 500;
+    fill: #A7DEEF;
+  }
+  100%{
+    stroke-dashoffset: 0;
+    stroke: black;
+    fill: #1044A8;
+    fill-opacity:2;
+  }
+}
+/* svg{
+  background-color: #A7DEEF;
+  color: #A7DEEF;
+  border: 1px solid #A7DEEF;
+  fill: #A7DEEF;
+  stroke: #A7DEEF;
+} */
+input[type = email], [type = password]{
+  height:50px;
+  width: 250px;
+
+  border-radius: 25px;
+  background: #1044A8;
+  fill:white;
+}
+::placeholder{
+  color: #C0C0C0;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration-thickness: 5px;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+}
+input[type = email], [type = password]::value{
+  background-color: white;
+}
+#fullNav{
+  font-family: 'Montserrat', sans-serif;
+
+}
+#fullNav li a{
+  color:#A7DEEF;
+}
+#fullNav li a:hover{
+  margin-bottom:0px;
+   border-bottom:4px solid #3DC1EB;
+   color: #1044A8;
+}
+input[type="submit"] {
+    border: 1px solid #0A3D5B;
+    background-color: transparent;
+    color: #0A3D5B;
+    margin-left: 75px;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+
+    margin-bottom: 30px;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* slide hover left -1 css */
+
+input.slide-hover-left-1 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+}
+
+input.slide-hover-left-1:hover {
+    background-size: 100%;
+    color: #fff;
+}
+.container{
+border-radius: 85px;
+background: #FFFFFF;
+box-shadow: -1px 18px 4px rgba(0, 0, 0, 0.25);
+border-radius: 153px;
+
+}
+.drop{
+  font-size:2.5em;
+  
+  font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+  width:350px;
+ z-index:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.file-upload{
+  height:70px;
+  width:70px;
+  border-radius:97px;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  border: 3px solid #000;
+  overflow:hidden;
+  background-image: linear-gradient(tobottom, #2590EB 50%, #000 50%);
+  background-size:100% 200%;
+  transition: all 1s;
+  color: #000;
+  font-size: 100px;
+}
+
+input[type = 'file']{
+  height:200px;
+  width:200px;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  cursor:pointer;
+}
+
+
+th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr:nth-child(even) {  
+  background-color:blanchedalmond;  
+} 
